@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+//         let myarray = [
+//     {
+//         id:1,
+//         name:"tushar",
+//         age:52,
+//         city:"bharatpur",
+//         marks:{
+//             p:65,
+//             m:45,
+//             c:85,
+
+//         }
+//     },{
+//         id:2,
+//         name:"shiv",
+//         age:22,
+//         city:"jaipur",
+//         marks:{
+//             p:85,
+//             m:85,
+//             c:25,
+
+//     }
+// },{
+//     id:3,
+//         name:"rohit",
+//         age:29,
+//         city:"jodhpur",
+//         marks:{
+//             p:48,
+//             m:87,
+//             c:95,
+//         }
+
+// }
+// ,{
+//     id:4,
+//         name:"sonu",
+//         age:29,
+//         city:"dholpur",
+//         marks:{
+//             p:58,
+//             m:97,
+//             c:92,
+//         }
+
+// }
+// ,{
+//     id:5,
+//         name:"priyanshu",
+//         age:22,
+//         city:"sikar",
+//         marks:{
+//             p:88,
+//             m:57,
+//             c:95,
+//         }
+
+
+// },{
+//     id:6,
+//         name:"vikas",
+//         age:30,
+//         city:"manish",
+//         marks:{
+//             p:98,
+//             m:57,
+//             c:25,
+//         }
+
+
+// },{
+//     id:7,
+//         name:"abhishek",
+//         age:29,
+//         city:"dausa",
+//         marks:{
+//             p:88,
+//             m:88,
+//             c:55,
+//         }
+
+// }
+// ]
+// let result = myarray.filter(student=>{
+//     let totalmarks = student.marks.p+student.marks.m+student.marks.c;
+//     let percentage = (totalmarks/300)*100;
+//     // console.log(percentage)
+//     return percentage >=75;
+    
+// })
+// console.log(result)
+
+//ANOTHER METHOD
+
+// let data = myarray.filter((item)=>{
+//     return ((item.marks.p + item.marks.c + item.marks.m)/3)>75
+// })
+// console.log(data)
+// myarray.filterforEach((item,index)=>{
+//     console.log(item,index)
+// })
+
+
+// Q.2
+const complexData = [
+          {
+            id: 1,
+            name: "John Doe",
+            age: 30,
+            address: {
+              street: "123 Main St",
+              city: "Anytown",
+              country: "USA",
+            },
+            orders: [
+              { orderId: "A123", amount: 50.75, status: "completed" },
+              { orderId: "B456", amount: 30.25, status: "pending" },
+            ],
+          },
+          {
+            id: 2,
+            name: "Jane Smith",
+            age: 25,
+            address: {
+              street: "456 Oak St",
+              city: "Othercity",
+              country: "USA",
+            },
+            orders: [
+              { orderId: "C789", amount: 100.5, status: "completed" },
+              { orderId: "D012", amount: 75.2, status: "completed" },
+            ],
+          },
+        ]
+//  Filter users who are aged 25 or younger.
+
+// let data = complexData.filter((item)=>{
+//     return item.age<=25
+// })
+// console.log(data)
+
+// Map the array to get an array of user names.
+// let data = complexData.map((item)=>{
+//     return item.name
+// })
+// console.log(data)
+
+
+// Filter orders with an amount greater than 50.
+// let data = complexData.map((item)=>{
+//     let value = item.orders.filter((Element)=>{
+//         return Element.amount>50
+//     })
+//     return value
+// })
+// console.log(data)
+
+
+// Map the array to get an array of order IDs.
+// let data = complexData.map((item)=>{
+//     let value = item.orders.map((Element)=>{
+//         return Element.orderId
+//     })
+//     return value
+// })
+// console.log(data)
+
+// Filter users who have at least one order with a status of 'pending'.
+// let data = complexData.map((item)=>{
+//     let value = item.orders.filter((Element)=>{
+//         return Element.status=="pending"
+//     })
+//     return value
+// })
+// console.log(data)
+
+// Map the array to get an array of objects containing user names and their total order amounts.
+
+// const result = complexData.map(user => {
+//   const totalAmount = user.orders.reduce((sum, order) => sum + order.amount,0);
+
+//   return {
+//     userName: user.name,
+
+//     totalAmount: totalAmount
+//   };
+// });
+
+// console.log(result);
+
+//  Filter users who are aged 25 or younger.
+// Map the array to get an array of user names.
+// Filter orders with an amount greater than 50.
+// Map the array to get an array of order IDs.
+// Filter users who have at least one order with a status of 'pending'.
+// Map the array to get an array of objects containing user names and their total order amounts.
+// Filter orders with an amount between 30 and 70.
+// Map the array to get an array of objects containing user names and their completed order IDs.
+// Filter users who live in the 'USA' and have at least one order with an amount greater than 50.
+// Filter users who live in the 'USA' and have at least one order with an amount greater than 50.
+
+
+
+    </script>
+</body>
+</html>
